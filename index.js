@@ -92,14 +92,10 @@ function deleteFromObjectByKey(inputObject, inputKey) {
   
   */
 function deleteFromObjectByKey(inputObject, inputKey) {
-  var outputObject = new Object();
-  for (var attr in inputObject) {
-    if (inputKey != attr) {
-          outputObject[attr] = inputObject[attr];
-
-    }
-  }
-  return outputObject;
+  
+  delete inputObject[inputKey];
+  
+  return inputObject;
 }
 
 /*
