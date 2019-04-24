@@ -14,7 +14,7 @@ function updateObjectWithKeyAndValue(inputObject, newKey, newValue) {
   for (var attr in inputObject) {
       if (inputObject.hasOwnProperty(attr)) copy[attr] = inputObject[attr];
   }
-  copy = {newKey, newValue};
+  copy[newKey] = newValue;
   return copy;
 }
 var obj = { prop: 1 };
