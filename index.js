@@ -89,7 +89,20 @@ function deleteFromObjectByKey(inputObject, inputKey) {
       expect(obj['prop']).toBe(1)
     })
   })
+  
+  */
+function deleteFromObjectByKey(inputObject, inputKey) {
+  var outputObject = new Object();
+  for (var attr in inputObject) {
+    if (inputKey != attr) {
+          outputObject[attr] = inputObject[attr];
 
+    }
+  }
+  return outputObject;
+}
+
+/*
   describe('destructivelyDeleteFromObjectByKey(object, key)', function() {
     it('returns object without the delete key/value pair', function() {
       var obj = { prop: 1 }
