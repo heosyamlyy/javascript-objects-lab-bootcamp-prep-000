@@ -17,7 +17,9 @@ function updateObjectWithKeyAndValue(inputObject, newKey, newValue) {
   copy = {newKey, newValue};
   return copy;
 }
-
+var obj = { prop: 1 };
+destructivelyUpdateObjectWithKeyAndValue(obj, "1", '2')
+console.log(obj);
 console.log(updateObjectWithKeyAndValue(recipes, "a", "b"))
 
 /*
@@ -44,9 +46,7 @@ function destructivelyUpdateObjectWithKeyAndValue(inputObject, inputKey, inputVa
   inputObject[inputKey] =inputValue;
   return inputObject;
 }
-var obj = { prop: 1 };
-destructivelyUpdateObjectWithKeyAndValue(obj, "1", '2')
-console.log(obj);
+
 /*
   describe('destructivelyUpdateObjectWithKeyAndValue(object, key, value)', function() {
     it('updates `object` with the given `key` and `value` (it is destructive) and returns the entire updated object', function() {
