@@ -91,7 +91,7 @@ function deleteFromObjectByKey(inputObject, inputKey) {
   })
   
   */
-function deleteFromObjectByKey(inputObject, inputKey) {
+function destructivelyDeleteFromObjectByKey(inputObject, inputKey) {
   
   delete inputObject[inputKey];
   
