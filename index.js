@@ -20,7 +20,7 @@ function updateObjectWithKeyAndValue(inputObject, newKey, newValue) {
 var obj = { prop: 1 };
 destructivelyUpdateObjectWithKeyAndValue(obj, "1", '2')
 console.log(obj);
-console.log(updateObjectWithKeyAndValue(recipes, "a", "b"))
+console.log(updateObjectWithKeyAndValue(obj, "a", "b"))
 
 /*
   describe('updateObjectWithKeyAndValue(object, key, value)', function() {
